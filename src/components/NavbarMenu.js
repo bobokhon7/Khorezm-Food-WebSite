@@ -9,6 +9,11 @@ const NavbarMenu = () => {
           <h3>Khorezm Food</h3>
         </li>
         <li style={{ float: "right" }}>
+          <Link class="active" to="/cart">
+            Cart
+          </Link>
+        </li>
+        <li style={{ float: "right" }}>
           <Link class="active" to="/news">
             News
           </Link>
@@ -20,7 +25,7 @@ const NavbarMenu = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li style={{ float: "right" }}>
-          <Link to="/menu">Menu</Link>
+          <Link to="/">Menu</Link>
         </li>
       </ul>
     </div>
