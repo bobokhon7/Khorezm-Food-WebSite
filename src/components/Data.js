@@ -42,7 +42,7 @@ const menu = [
     category: "lunch",
     price: 120.0,
     img:
-      "https://lh3.googleusercontent.com/proxy/1bR37kfrYQkwJygTutNCjrGxi91mfoM00d4cYYSuen1nBMCA4mbn-2Nt0FamLy73e2O2HOTCcvPTapGYNr8F_rkxeXNIBKEZQX-WBIxuB1hV-WE8i6wkhrAFbtx1Pfmr6NQkb2-hZgvrxm-u8Nz6Rj5G5A",
+      "https://fastly.4sqi.net/img/general/600x600/92913240_JAC0AZHXTfvX-QUjPQNYC4rPoYK5qlAwitWZGwBLGzM.jpg",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi accusantium vel cum suscipit cumque hic dolore ut ab odio, aspernatur quo repellat dicta autem minima molestias atque quis? Eos, voluptatibus. `,
   },
   {

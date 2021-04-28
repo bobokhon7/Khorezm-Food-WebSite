@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./components/NavbarMenu";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/About";
-import News from "./components/News";
+// import News from "./components/News";
 import Contact from "./components/Contact";
 import SendMenu from "./components/SendMenu";
 import Home from "./components/Home";
@@ -13,19 +13,21 @@ function App() {
   return (
     <Router>
       <div>
-        <Home />
+        {/* <Home /> */}
         <Navbar />
         <Switch>
-          <Route exact path="/menu">
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route  path="/menu">
             <SendMenu />
           </Route>
-
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/news">
+          {/* <Route path="/news">
             <News />
-          </Route>
+          </Route> */}
           <Route path="/contact">
             <Contact />
           </Route>

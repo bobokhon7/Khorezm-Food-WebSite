@@ -296,3 +296,17 @@ li a:hover {
   background-image: url("http://www.malika-khiva.com/images/khiva/khiva.jpg");
 } */
 
+.orderBtn {
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: rgb(219, 228, 230);
+  color: black;
+  border: 1px solid #4caf50; /* Green */
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.orderBtn:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
