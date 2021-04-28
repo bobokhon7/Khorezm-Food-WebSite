@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import Data from "./Data";
+import React, { useContext } from "react";
+import { FoodContext } from "./Data";
 import Catogry from "./Catogry";
 import Menu from "./Menu";
 
 const SendMenu = () => {
-  const [menuItems, setMenuItems] = useState(Data);
+  const [menuItems, setMenuItems] = useContext(FoodContext);
 
   const filterItems = (category) => {
     if (category === "all") {
-      setMenuItems(Data);
+      setMenuItems(FoodContext);
       return;
     }
-    const selectedCategory = Data.filter((data) => data.category === category);
+    const selectedCategory = FoodContext.filter(
+      (data) => data.category === category
+    );
     setMenuItems(selectedCategory);
   };
   return (
