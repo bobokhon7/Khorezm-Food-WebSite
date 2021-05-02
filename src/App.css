@@ -310,3 +310,20 @@ li a:hover {
   background-color: #4caf50; /* Green */
   color: white;
 }
+
+.removeBtn {
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: rgb(219, 228, 230);
+  color: black;
+  border: 1px solid #af4c54; /* Green */
+  cursor: pointer;
+  transition-duration: 0.4s;
+  /* position: absolute;
+  top: 130px; */
+}
+
+.removeBtn:hover {
+  background-color: #c64545; /* Green */
+  color: white;
+}

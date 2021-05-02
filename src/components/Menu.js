@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "./CartContext";
 
 const Menu = ({ items }) => {
+  const [food, setFood] = useContext(CartContext);
+  const addToCart = (menuItem) => {
+    setFood([...food, menuItem]);
+  };
   return (
     <div className="section-center">
       {items.map((menuItem) => {
@@ -14,7 +19,9 @@ const Menu = ({ items }) => {
                 <h4> ${price}</h4>
               </header>
               <p className="item-text">{desc}</p>
-              <button className="orderBtn">Order</button>
+              <button className="orderBtn" onClick={() => addToCart(menuItem)}>
+                Order
+              </button>
             </div>
           </article>
         );

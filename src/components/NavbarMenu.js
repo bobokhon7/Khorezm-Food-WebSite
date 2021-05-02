@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 // import { FormControl, Navbar, Form, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
 
 const NavbarMenu = () => {
+  const [data] = useContext(CartContext);
   return (
     <div className="navbar">
       <ul>
@@ -12,7 +14,7 @@ const NavbarMenu = () => {
 
         <li style={{ float: "right" }}>
           <Link class="active" to="/cart">
-            Cart
+            Cart ({data.length})
           </Link>
         </li>
         {/* <li style={{ float: "right" }}>

@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { FoodContext } from "./Data";
 import Catogry from "./Catogry";
 import Menu from "./Menu";
+import NavbarMenu from "./NavbarMenu";
 
 const SendMenu = () => {
   const [menuItems, setMenuItems] = useContext(FoodContext);
+  // const [food, setFood] = useState([]);
 
   const filterItems = (category) => {
     if (category === "all") {
@@ -16,6 +18,7 @@ const SendMenu = () => {
     );
     setMenuItems(selectedCategory);
   };
+
   return (
     <div>
       <main>
@@ -28,6 +31,7 @@ const SendMenu = () => {
           </div>
         </section>
       </main>
+      <NavbarMenu />
     </div>
   );
 };
