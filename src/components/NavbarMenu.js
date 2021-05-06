@@ -17,11 +17,7 @@ const NavbarMenu = () => {
             Cart ({data.length})
           </Link>
         </li>
-        {/* <li style={{ float: "right" }}>
-          <Link class="active" to="/news">
-            News
-          </Link>
-        </li> */}
+       
         <li style={{ float: "right" }}>
           <Link to="/about">About</Link>
         </li>

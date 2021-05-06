@@ -7,7 +7,7 @@ const Menu = ({ items }) => {
     setFood([...food, menuItem]);
   };
   return (
-    <div className="section-center">
+    <div className="section-center" style={{ marginTop: "30px" }}>
       {items.map((menuItem) => {
         const { id, title, img, desc, price } = menuItem;
         return (

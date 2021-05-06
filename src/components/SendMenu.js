@@ -8,16 +8,16 @@ const SendMenu = () => {
   const [menuItems, setMenuItems] = useContext(FoodContext);
   // const [food, setFood] = useState([]);
 
-  const filterItems = (category) => {
-    if (category === "all") {
-      setMenuItems(FoodContext);
-      return;
-    }
-    const selectedCategory = FoodContext.filter(
-      (data) => data.category === category
-    );
-    setMenuItems(selectedCategory);
-  };
+  // const filterItems = (category) => {
+  //   if (category === "all") {
+  //     setMenuItems(menuItems);
+  //     return;
+  //   }
+  //   const selectedCategory = menuItems.filter(
+  //     (data) => data.category === category
+  //   );
+  //   setMenuItems(selectedCategory);
+  // };
 
   return (
     <div>
@@ -26,7 +26,7 @@ const SendMenu = () => {
           <div className="title">
             <h2>Our Menu</h2>
             <div className="underline"></div>
-            <Catogry filterItems={filterItems} />
+            {/* <Catogry filterItems={filterItems} /> */}
             <Menu items={menuItems} />
           </div>
         </section>
