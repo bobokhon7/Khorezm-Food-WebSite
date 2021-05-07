@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { FoodContext } from "./Data";
-import Catogry from "./Catogry";
+// import Catogry from "./Catogry";
 import Menu from "./Menu";
 import NavbarMenu from "./NavbarMenu";
 
 const SendMenu = () => {
-  const [menuItems, setMenuItems] = useContext(FoodContext);
+  const [menuItems] = useContext(FoodContext);
   // const [food, setFood] = useState([]);
 
   // const filterItems = (category) => {
