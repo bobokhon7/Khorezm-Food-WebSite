@@ -7,7 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import SendMenu from "./components/SendMenu";
 import Home from "./components/Home";
-import Cart from "./components/Cart";
+import Cart from "./components/Card/Cart";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
-          </Route>
+          </Route>  
           <Route path="/contact">
             <Contact />
           </Route>

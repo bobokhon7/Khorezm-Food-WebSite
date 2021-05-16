@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 // import { FormControl, Navbar, Form, Nav, Button } from "react-bootstrap";
+
+import { ShoppingCartOutlined } from "@ant-design/icons";
+
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 
@@ -12,12 +15,12 @@ const NavbarMenu = () => {
           <h3>Khorezm Food</h3>
         </li>
 
-        <li style={{ float: "right" }}>
+        <li style={{ float: "right", fontSize: "18px" }}>
           <Link class="active" to="/cart">
-            Cart ({data.length})
+            <ShoppingCartOutlined /> ({data.length})
           </Link>
         </li>
-       
+
         <li style={{ float: "right" }}>
           <Link to="/about">About</Link>
         </li>

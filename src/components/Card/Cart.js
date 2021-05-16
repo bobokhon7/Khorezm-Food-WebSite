@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
+import { useHistory } from "react-router-dom";
+import { BuyBtn1 } from "./style";
+import { DoubleLeftOutlined, HeartOutlined } from "@ant-design/icons";
 
 const Cart = () => {
   const [data, setData] = useContext(CartContext);
@@ -8,6 +11,12 @@ const Cart = () => {
     const filterFood = data.filter((food) => food.id !== id);
     setData(filterFood);
   };
+
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/menu");
+  }
 
   return (
     <div
@@ -32,14 +41,14 @@ const Cart = () => {
                 <div className="item-info">
                   <header>
                     <h4>{title} </h4>
-                    <h4> ${price}</h4>
+                    <h4> ₩{price}</h4>
                   </header>
                   <p className="item-text">{desc}</p>
                   <button
                     className="removeBtn"
                     onClick={() => removeFromCart(id)}
                   >
-                    Remove
+                    Cancel the Order
                   </button>
                 </div>
               </article>
@@ -51,6 +60,10 @@ const Cart = () => {
               return total + Number(currentItem.price);
             }, 0)}
           </h3>
+          <BuyBtn1 onClick={handleClick}>
+            <DoubleLeftOutlined />
+            Continue Ordering
+          </BuyBtn1>{" "}
         </div>
       )}
     </div>

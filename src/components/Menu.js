@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
+import { BuyBtn } from "./Card/style";
+import { HeartOutlined } from "@ant-design/icons";
 
 const Menu = ({ items }) => {
   const [food, setFood] = useContext(CartContext);
@@ -19,9 +21,15 @@ const Menu = ({ items }) => {
                 <h4> ₩{price}</h4>
               </header>
               <p className="item-text">{desc}</p>
-              <button className="orderBtn" onClick={() => addToCart(menuItem)}>
-                Order
-              </button>
+              {/* <button className="orderBtn">
+                
+              </button> */}
+              <BuyBtn onClick={() => addToCart(menuItem)}>Order</BuyBtn>{" "}
+              <span
+                style={{ fontSize: "20px", color: "red", marginLeft: "10px" }}
+              >
+                <HeartOutlined />
+              </span>
             </div>
           </article>
         );
