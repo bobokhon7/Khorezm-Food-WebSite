@@ -327,3 +327,6 @@ li a:hover {
   background-color: #c64545; /* Green */
   color: white;
 }
+.react-multi-carousel-item {
+  background-color: white;
+}

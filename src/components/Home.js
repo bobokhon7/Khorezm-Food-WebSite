@@ -1,12 +1,13 @@
 import React from "react";
 import Typical from "react-typical";
+import FeedbackCarousel from "../components/FeedbackCarousel/index";
 
 const Home = () => {
   return (
     <div>
       <h4
         style={{
-          padding: "150px",
+          padding: "100px",
           justifyContent: "center",
           textAlign: "center",
         }}
@@ -26,6 +27,7 @@ const Home = () => {
           wrapper="b"
         />
       </h2>
+      <FeedbackCarousel />
     </div>
   );
 };

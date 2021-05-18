@@ -48,7 +48,7 @@ const Cart = () => {
                     className="removeBtn"
                     onClick={() => removeFromCart(id)}
                   >
-                    Cancel the Order
+                    Cancel  
                   </button>
                 </div>
               </article>
