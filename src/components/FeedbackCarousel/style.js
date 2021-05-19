@@ -30,19 +30,20 @@ export const Text = styled.div`
 `;
 
 export const ShadowImg = styled.img`
-  background-color: white;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   opacity: 0.7;
   width: 90px;
   height: 235px;
   position: absolute;
   top: 415px;
-`;
-export const ShadowRight = styled.img`
-  opacity: 0.7;
-  width: 90px;
-  height: 235px;
-  background-color: white;
-  position: absolute;
-  top: 415px;
-  right: 0px;
+  ${(props) => {
+    if (props.position) {
+      return `
+      right:0px;
+      transform: rotate(180deg);`;
+    } else {
+      return `
+      left:0px`;
+    }
+  }};
 `;

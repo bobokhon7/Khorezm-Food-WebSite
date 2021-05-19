@@ -1,6 +1,5 @@
 import React from 'react'
-import {Container,TextWrapper,NameWrapper,ImgWrapper, StarIcon} from "./style"
-import Star from "../../assets/icon/star.png"
+import {Container,TextWrapper,NameWrapper,ImgWrapper} from "./style"
 import {mockData} from "../../mock/mockData"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -28,7 +27,23 @@ const responsive = {
 const BodyHeader =() => {
   return (
     
-      <Carousel  responsive={responsive}>
+      <Carousel  
+      additionalTransfrom={0}
+    autoPlay
+    autoPlaySpeed={2500}
+    centerMode={false}
+    className=""
+    containerClass="container-with-dots"
+    dotListClass=""
+    draggable
+    focusOnSelect={false}
+    infinite
+    itemClass=""
+    keyBoardControl
+    minimumTouchDrag={80}
+    renderButtonGroupOutside={false}
+    renderDotsOutside={false} 
+      responsive={responsive}>
         {mockData.map((value) =>{
           return(
             
@@ -40,8 +55,6 @@ const BodyHeader =() => {
               {value.title} 
             </TextWrapper>
             <ImgWrapper src={value.img}/>
-            {/* <StarIcon src={Star} /> */}
-            
             <span
                 style={{
                   fontSize: "20px",

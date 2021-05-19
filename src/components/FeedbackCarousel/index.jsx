@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,TextWrapper,Text,ShadowImg,ShadowRight} from "./style"
+import {Container,TextWrapper,Text,ShadowImg} from "./style"
 
 import Shadows from "../../assets/img/Shadow.png"
 import BodyHeader from "../BodyHeader"
@@ -15,8 +15,7 @@ const FeedbackCarousel=() => {
     </TextWrapper>
      <BodyHeader/>
   <ShadowImg src={Shadows}/>
-    <ShadowRight  src={Shadows}/>
-   
+  <ShadowImg position src={Shadows}/>
     </Container>
   
   )
