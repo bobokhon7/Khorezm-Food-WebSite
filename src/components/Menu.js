@@ -26,7 +26,11 @@ const Menu = ({ items }) => {
               </button> */}
               <BuyBtn onClick={() => addToCart(menuItem)}>Order</BuyBtn>{" "}
               <span
-                style={{ fontSize: "20px", color: "red", marginLeft: "10px" }}
+                style={{
+                  fontSize: "20px",
+                  color: "red",
+                  marginLeft: "10px",
+                }}
               >
                 <HeartOutlined />
               </span>

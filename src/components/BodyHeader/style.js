@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 12px;
   box-sizing: border-box;
   background: #ffffff;
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
   margin-right: 20px;
   margin-top: 40px;
 `;
@@ -23,7 +23,7 @@ export const TextWrapper = styled.div`
   font-size: 15px;
   line-height: 22px;
   text-align: center;
-  margin: 24px auto;
+  margin: 5px auto;
 `;
 
 export const NameWrapper = styled.div`
@@ -34,7 +34,7 @@ export const NameWrapper = styled.div`
   line-height: 18px;
   text-align: center;
   color: #a9a9a9;
-  margin: 10px 0;
+  margin: 25px 0;
 `;
 
 export const ImgWrapper = styled.img`
@@ -44,4 +44,21 @@ export const ImgWrapper = styled.img`
   align-items: center;
   text-align: center;
   margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 40%;
+`;
+
+export const StarIcon = styled.img`
+  width: 20px;
+  height: 15px;
+  /* background-color: yellow; */
+  fill: orange;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+  :hover {
+    fill: #151515;
+  }
 `;

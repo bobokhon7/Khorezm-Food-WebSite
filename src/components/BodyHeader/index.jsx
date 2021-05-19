@@ -1,8 +1,11 @@
 import React from 'react'
-import {Container,TextWrapper,NameWrapper,ImgWrapper} from "./style"
+import {Container,TextWrapper,NameWrapper,ImgWrapper, StarIcon} from "./style"
+import Star from "../../assets/icon/star.png"
 import {mockData} from "../../mock/mockData"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { StarOutlined } from "@ant-design/icons";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -26,17 +29,29 @@ const BodyHeader =() => {
   return (
     
       <Carousel  responsive={responsive}>
-        {mockData.map((data,i) =>{
+        {mockData.map((value) =>{
           return(
             
-            <Container key={data.id}  >
-            <TextWrapper>
-              {data.title} 
-            </TextWrapper>
+            <Container key={value.id}  >
             <NameWrapper>
-              Name and Surname
+              {value.name}
             </NameWrapper>
-            <ImgWrapper src={data.img}/>
+            <TextWrapper>
+              {value.title} 
+            </TextWrapper>
+            <ImgWrapper src={value.img}/>
+            {/* <StarIcon src={Star} /> */}
+            
+            <span
+                style={{
+                  fontSize: "20px",
+                  color: "yellow  ",
+                  marginLeft: "10px",
+                  textAlign:"center"
+                }}
+              >
+                <StarOutlined />  <StarOutlined />  <StarOutlined />  <StarOutlined />  <StarOutlined />
+              </span>
           </Container>
         
           )

@@ -11,8 +11,8 @@ export const Container = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
+  /* padding-bottom: 40px; */
+  margin-bottom: 40px;
 `;
 
 export const Text = styled.div`
@@ -24,34 +24,25 @@ export const Text = styled.div`
   color: #151515;
   width: 183px;
   height: 27px;
-  text-align: center;
+
   /* margin-right: auto; */
   margin: 65px 0 0 30px;
 `;
 
-export const Button = styled.div`
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 22px;
-  color: #151515;
-  width: 98px;
-  height: 35px;
-  background: #ffffff;
-  border-radius: 12px;
-  margin-left: auto;
-  margin-top: auto;
-  text-align: center;
+export const ShadowImg = styled.img`
+  background-color: white;
+  opacity: 0.7;
+  width: 90px;
+  height: 235px;
+  position: absolute;
+  top: 415px;
 `;
-
-export const ImgArrow = styled.img`
-  width: 4px;
-  height: 10px;
-  font-size: 20px;
-  margin-left: 10px;
+export const ShadowRight = styled.img`
+  opacity: 0.7;
+  width: 90px;
+  height: 235px;
+  background-color: white;
+  position: absolute;
+  top: 415px;
+  right: 0px;
 `;
-
-// export const HeaderWarapper = styled.div`
-//   display: flex;
-// `;

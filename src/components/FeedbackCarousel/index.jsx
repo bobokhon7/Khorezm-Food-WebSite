@@ -1,7 +1,9 @@
 import React from 'react'
-import {Container,TextWrapper,Text, Button} from "./style"
-// import imgArrow from "../../assets/img/leftArrow.png"
+import {Container,TextWrapper,Text,ShadowImg,ShadowRight} from "./style"
+
+import Shadows from "../../assets/img/Shadow.png"
 import BodyHeader from "../BodyHeader"
+
 
 
 const FeedbackCarousel=() => {
@@ -9,10 +11,12 @@ const FeedbackCarousel=() => {
     <Container>
     <TextWrapper>
       <Text>Our customers say</Text>
-      <Button>Next </Button>
+     
     </TextWrapper>
      <BodyHeader/>
-    
+  <ShadowImg src={Shadows}/>
+    <ShadowRight  src={Shadows}/>
+   
     </Container>
   
   )

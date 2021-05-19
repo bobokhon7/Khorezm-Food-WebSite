@@ -1,43 +1,53 @@
 import person from "../assets/img/CommentImg.png";
+import person1 from "../assets/img/person1.png";
+
 export const mockData = [
   {
     id: 1,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
-    img: `${person}`,
+    name: "Smith Johnson",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
+    img: `${person1}`,
   },
   {
     id: 2,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
+    name: "Anderson Clark",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
     img: `${person}`,
   },
   {
     id: 3,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
-    img: `${person}`,
+    name: "John Kevin",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
+    img: `${person1}`,
   },
   {
     id: 4,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
+    name: "Jeff Jorge",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
     img: `${person}`,
   },
   {
     id: 5,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
-    img: `${person}`,
+    name: "David Richard",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
+    img: `${person1}`,
   },
   {
     id: 6,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
+    name: "Steven Smith",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
     img: `${person}`,
   },
   {
     id: 7,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
-    img: `${person}`,
+    name: "Jeck Andersen",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
+    img: `${person1}`,
   },
   {
     id: 8,
-    title: `"This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here `,
+    name: "Paul Dev",
+    title: `"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae doloribus explicabo delectus.doloribus explicabo delectuss."`,
     img: `${person}`,
   },
 ];
