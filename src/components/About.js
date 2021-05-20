@@ -1,7 +1,4 @@
 import React from "react";
-// import * as React from "react";
-// import * as bs from "bootstrap/dist/css/bootstrap.css";
-// import * as bst from "bootstrap/dist/css/bootstrap-theme.css";
 
 function About() {
   return (
@@ -10,6 +7,7 @@ function About() {
       <h3 style={{ textAlign: "center", marginTop: "30px" }}>
         All Delicious Foods Here...
       </h3>
+
       <h5 className="about-info">
         You want some delicious Khorezm food? Maybe you’re in the mood for a
         juicy steak? No matter what kind of meal you have in mind, The Khorezm

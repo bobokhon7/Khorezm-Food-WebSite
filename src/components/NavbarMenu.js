@@ -5,6 +5,8 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import { auth } from "./FireBase";
+import { SignOut } from "./Login/index";
 
 const NavbarMenu = () => {
   const [data] = useContext(CartContext);
@@ -13,6 +15,10 @@ const NavbarMenu = () => {
       <ul>
         <li>
           <h3>Khorezm Food</h3>
+        </li>
+
+        <li style={{ float: "right", fontSize: "18px" }}>
+          <SignOut onClick={() => auth.signOut()}>Sign Out</SignOut>
         </li>
 
         <li style={{ float: "right", fontSize: "18px" }}>

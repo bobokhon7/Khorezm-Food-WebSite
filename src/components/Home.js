@@ -2,6 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import FeedbackCarousel from "../components/FeedbackCarousel/index";
 
+
 const Home = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const Home = () => {
       >
         you are looking for a great Khorezm Food in Seoul?
       </h4>
-
+      
       <h2
         style={{
           justifyContent: "center",
