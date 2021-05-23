@@ -50,8 +50,8 @@ const SignIn = () => {
       </TextWrapper>
 
       <InputWrapper>
-        <EmailWarpper ref={emailRef} type="email" />
-        <PasswordWrapper ref={passwordRef} type="password" />
+        <EmailWarpper ref={emailRef} type="email" required />
+        <PasswordWrapper ref={passwordRef} type="password" required />
         <ButtonWrapper onClick={signIn}>Login</ButtonWrapper>
         <TextWrapper>
           Not yet Register?
