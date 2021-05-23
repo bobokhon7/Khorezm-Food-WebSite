@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { auth } from "../FireBase";
-import "./style.css";
+import { auth } from "../FireBase/FireBase";
+
 import {
   Container,
   TextWrapper,
@@ -9,7 +9,8 @@ import {
   ButtonWrapper,
   SignUpWrapper,
   InputWrapper,
-} from "./index";
+  MainContainer,
+} from "./style";
 
 const SignIn = () => {
   const emailRef = useRef(null);
@@ -44,21 +45,33 @@ const SignIn = () => {
       });
   };
   return (
-    <Container>
-      <TextWrapper>
-        Welcome to Khorezm Food!! SignUp or Login to get started!!
-      </TextWrapper>
-
-      <InputWrapper>
-        <EmailWarpper ref={emailRef} type="email" required />
-        <PasswordWrapper ref={passwordRef} type="password" required />
-        <ButtonWrapper onClick={signIn}>Login</ButtonWrapper>
+    <MainContainer>
+      <Container>
         <TextWrapper>
-          Not yet Register?
-          <SignUpWrapper onClick={signUp}> Sign up</SignUpWrapper>
+          Welcome to Khorezm Food!! SignUp or Login to get started!!
         </TextWrapper>
-      </InputWrapper>
-    </Container>
+
+        <InputWrapper>
+          <EmailWarpper
+            ref={emailRef}
+            type="email"
+            required
+            placeholder="example@gmail.com"
+          />
+          <PasswordWrapper
+            ref={passwordRef}
+            type="password"
+            placeholder="***********"
+            required
+          />
+          <ButtonWrapper onClick={signIn}>Login</ButtonWrapper>
+          <TextWrapper>
+            Not yet Register?
+            <SignUpWrapper onClick={signUp}> Sign up</SignUpWrapper>
+          </TextWrapper>
+        </InputWrapper>
+      </Container>
+    </MainContainer>
   );
 };
 

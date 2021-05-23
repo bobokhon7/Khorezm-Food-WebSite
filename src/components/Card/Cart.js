@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../Context/CartContext";
 import { useHistory } from "react-router-dom";
 import { BuyBtn1 } from "./style";
-import { DoubleLeftOutlined, HeartOutlined } from "@ant-design/icons";
+import { DoubleLeftOutlined } from "@ant-design/icons";
 
 const Cart = () => {
   const [data, setData] = useContext(CartContext);
@@ -48,7 +48,7 @@ const Cart = () => {
                     className="removeBtn"
                     onClick={() => removeFromCart(id)}
                   >
-                    Cancel  
+                    Cancel
                   </button>
                 </div>
               </article>

@@ -14,7 +14,7 @@ export const BuyBtn = styled(Button)`
   color: #ffffff;
   margin-left: auto;
   cursor: pointer;
-  /* transition-duration: 0.4s; */
+
   &:hover,
   &:focus {
     color: #7ed321 !important;
@@ -34,7 +34,6 @@ export const BuyBtn1 = styled(Button)`
   margin-left: auto;
   cursor: pointer;
 
-  /* transition-duration: 0.4s; */
   &:hover,
   &:focus {
     color: #7ed321 !important;

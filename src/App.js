@@ -1,14 +1,14 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./components/NavbarMenu";
+import Navbar from "./components/Menu/NavbarMenu";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import SendMenu from "./components/SendMenu";
-import Home from "./components/Home";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import SendMenu from "./components/Menu/SendMenu";
+import Home from "./components/Home/Home";
 import Cart from "./components/Card/Cart";
 import { useEffect, useState } from "react";
-import { auth } from "../src/components/FireBase";
+import { auth } from "./components/FireBase/FireBase";
 import SignIn from "./components/Login/SignIn";
 
 function App() {

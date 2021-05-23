@@ -7,11 +7,9 @@ export const Container = styled.div`
   margin-top: 50px;
   box-sizing: border-box;
   background: #ffffff;
-  /* background-color: whitesmoke; */
 `;
 
 export const TextWrapper = styled.div`
-  /* padding-bottom: 40px; */
   margin-bottom: 40px;
 `;
 
@@ -24,8 +22,6 @@ export const Text = styled.div`
   color: #151515;
   width: 183px;
   height: 27px;
-
-  /* margin-right: auto; */
   margin: 65px 0 0 30px;
 `;
 

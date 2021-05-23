@@ -2,7 +2,7 @@ import React from 'react'
 import {Container,TextWrapper,Text,ShadowImg} from "./style"
 
 import Shadows from "../../assets/img/Shadow.png"
-import BodyHeader from "../BodyHeader"
+import BodyHeader from "../FeedbackCard"
 
 
 
