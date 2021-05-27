@@ -5,20 +5,11 @@ import FeedbackCarousel from "../FeedbackCarousel/index";
 const Home = () => {
   return (
     <div>
-      <h4
-        style={{
-          padding: "100px",
-          justifyContent: "center",
-          textAlign: "center",
-        }}
-      >
-        you are looking for a great Khorezm Food in Seoul?
-      </h4>
-
       <h2
         style={{
           justifyContent: "center",
           textAlign: "center",
+          padding: "15px",
         }}
       >
         <Typical

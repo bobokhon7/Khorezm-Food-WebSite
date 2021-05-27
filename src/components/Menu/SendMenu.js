@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { FoodContext } from "../../mock/Data";
 import Menu from "./Menu";
-import NavbarMenu from "./NavbarMenu";
 
 const SendMenu = () => {
   const [menuItems] = useContext(FoodContext);
@@ -18,7 +17,6 @@ const SendMenu = () => {
           </div>
         </section>
       </main>
-      <NavbarMenu />
     </div>
   );
 };

@@ -3,10 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className="about">
-      <h2 style={{ textAlign: "center" }}>The Khorezm Food</h2>
-      <h3 style={{ textAlign: "center", marginTop: "30px" }}>
-        All Delicious Foods Here...
-      </h3>
+      <h3 style={{ textAlign: "center" }}>All Delicious Foods Here...</h3>
 
       <h5 className="about-info">
         You want some delicious Khorezm food? Maybe you’re in the mood for a

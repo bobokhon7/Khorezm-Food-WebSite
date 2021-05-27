@@ -3,6 +3,7 @@
 Variables
 ===============
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 :root {
   /* dark shades of primary color*/
@@ -281,7 +282,7 @@ li a:hover {
   margin-top: 120px;
 }
 .contact {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .about-info {
@@ -289,7 +290,8 @@ li a:hover {
   font-size: 1rem;
   margin: auto;
   padding: auto;
-  width: 30rem;
+  width: 20rem;
+  height: 500px;
 }
 /* .home {
   padding-top: 100px;

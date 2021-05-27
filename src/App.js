@@ -1,17 +1,26 @@
 import "./App.css";
-import React from "react";
-import Navbar from "./components/Menu/NavbarMenu";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useContext } from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import SendMenu from "./components/Menu/SendMenu";
+import Menu from "./components/Menu/SendMenu";
 import Home from "./components/Home/Home";
 import Cart from "./components/Card/Cart";
+import SignOut from "./components/SignOut/SignOut";
 import { useEffect, useState } from "react";
 import { auth } from "./components/FireBase/FireBase";
 import SignIn from "./components/Login/SignIn";
-
+import Navbar from "create-react-nav";
+import { CartContext } from "../src/components/Context/CartContext";
 function App() {
+  const [data] = useContext(CartContext);
+  const links = [
+    ["/", "Home", Home],
+    ["/menu", "Menu", Menu],
+    ["/contact", "Contact", Contact],
+    ["/about", "About", About],
+    ["/cart", `Cart(${data.length})`, Cart],
+    ["/signOut", "SignOut", SignOut],
+  ];
   const [user, setUser] = useState(null);
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -31,29 +40,7 @@ function App() {
   return (
     <>
       {user ? (
-        <Router>
-          <div>
-            <Navbar />
-            {/* <Home /> */}
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/menu">
-                <SendMenu />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/cart">
-                <Cart />
-              </Route>
-            </Switch>
-          </div>
-        </Router>
+        <Navbar logoTxt="Khorezm Food" yToggle="true" routes={links} />
       ) : (
         <SignIn />
       )}

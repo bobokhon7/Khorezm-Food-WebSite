@@ -10,6 +10,7 @@ const Contact = () => {
         <h3>Opens:10.00am Closes:10.00pm</h3>
         <div style={{ marginTop: "20px" }}>
           <img
+            style={{ width: "390px" }}
             alt="img"
             src="https://media-cdn.tripadvisor.com/media/photo-s/13/53/56/88/getlstd-property-photo.jpg"
           />

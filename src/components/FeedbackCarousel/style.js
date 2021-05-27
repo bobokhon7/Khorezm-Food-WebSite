@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 426px;
+  height: 350px;
   border: 1px solid #f9f9f9;
   margin-top: 50px;
   box-sizing: border-box;
   background: #ffffff;
+  margin-top: 130px;
 `;
 
 export const TextWrapper = styled.div`
