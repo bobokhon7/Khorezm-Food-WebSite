@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { auth } from "../FireBase/FireBase";
+import { MailOutlined, LockOutlined } from "@ant-design/icons";
 
 import {
   Container,
@@ -10,6 +11,7 @@ import {
   SignUpWrapper,
   InputWrapper,
   MainContainer,
+  IconWrapper,
 } from "./style";
 
 const SignIn = () => {
@@ -52,12 +54,19 @@ const SignIn = () => {
         </TextWrapper>
 
         <InputWrapper>
+          <IconWrapper>
+            {" "}
+            <MailOutlined />
+          </IconWrapper>
           <EmailWarpper
             ref={emailRef}
             type="email"
             required
             placeholder="example@gmail.com"
           />
+          <IconWrapper changeTop>
+            <LockOutlined />
+          </IconWrapper>
           <PasswordWrapper
             ref={passwordRef}
             type="password"

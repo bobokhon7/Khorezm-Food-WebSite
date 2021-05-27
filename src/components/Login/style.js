@@ -51,6 +51,7 @@ export const EmailWarpper = styled.input`
   background-color: rgb(243, 241, 238);
   border: 1px solid rgb(243, 241, 238);
   color: black;
+  padding-left: 30px;
 `;
 
 export const PasswordWrapper = styled.input`
@@ -61,6 +62,7 @@ export const PasswordWrapper = styled.input`
   background-color: rgb(243, 241, 238);
   border: 1px solid rgb(243, 241, 238);
   color: black;
+  padding-left: 30px;
 `;
 
 export const ButtonWrapper = styled.button`
@@ -98,4 +100,10 @@ export const SignOut = styled.span`
     transform: scale(0.95);
     background-color: #111;
   }
+`;
+export const IconWrapper = styled.div`
+  position: absolute;
+  top: ${(props) => (props.changeTop ? "186px" : "133px")};
+  left: 50px;
+  color: black;
 `;
