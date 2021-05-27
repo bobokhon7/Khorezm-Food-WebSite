@@ -1,10 +1,11 @@
 import React from "react";
 import Typical from "react-typical";
 import FeedbackCarousel from "../FeedbackCarousel/index";
+import { MainContainer } from "../SignOut/style";
 
 const Home = () => {
   return (
-    <div>
+    <MainContainer>
       <h2
         style={{
           justifyContent: "center",
@@ -19,7 +20,7 @@ const Home = () => {
         />
       </h2>
       <FeedbackCarousel />
-    </div>
+    </MainContainer>
   );
 };
 

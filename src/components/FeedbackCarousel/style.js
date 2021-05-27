@@ -32,7 +32,8 @@ export const ShadowImg = styled.img`
   width: 90px;
   height: 235px;
   position: absolute;
-  top: 415px;
+
+  top: 390px;
   ${(props) => {
     if (props.position) {
       return `
