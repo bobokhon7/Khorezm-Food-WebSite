@@ -1,3 +1,3 @@
-[Demo](https://boboxon.github.io/Khorezm-Food-WebSite/)
+[Demo](https://bobokhon7.github.io/Khorezm-Food-WebSite/)
 
 
